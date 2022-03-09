@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Car Group App</string>
+    <string name="hint_car_model_search_view">Search Car Models...</string>
+    <string name="No_result_found_dialog_title">No Result</string>
+    <string name="No_result_found_dialog_message">Please search with more specific names.</string>
+    <string name="No_result_found_dialog_button_ok">GOT IT</string>
+    <string name="No_result_found_dialog_error_message">Something went wrong.</string>
+</resources>

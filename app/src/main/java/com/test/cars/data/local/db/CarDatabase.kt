@@ -1,0 +1,33 @@
+package com.test.cars.data.local.db
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.test.cars.domain.model.Manufacturer
+
+@Database(
+    entities = [Manufacturer::class],
+    version = 1
+)
+abstract class CarDatabase : RoomDatabase() {
+
+    abstract fun getArticleDao(): CarDao
+
+    companion object {
+        @Volatile
+        private var instance: CarDatabase? = null
+        private val LOCK = Any()
+
+        operator fun invoke(context: Context) = instance ?: synchronized(LOCK) {
+            instance ?: createDatabase(context).also { instance = it }
+        }
+
+        private fun createDatabase(context: Context) =
+            Room.databaseBuilder(
+                context.applicationContext,
+                CarDatabase::class.java,
+                "car_db.db"
+            ).build()
+    }
+}

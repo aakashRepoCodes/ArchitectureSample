@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_view_corner_radius">12dp</dimen>
+    <dimen name="top_margin_recycler_view_models_page">58dp</dimen>
+    <dimen name="car_card_radius_model_page">8dp</dimen>
+    <dimen name="car_card_height_model_page">220dp</dimen>
+</resources>
