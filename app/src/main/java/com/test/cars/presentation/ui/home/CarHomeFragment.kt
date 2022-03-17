@@ -57,9 +57,9 @@ class CarHomeFragment : Fragment() {
                 }
             }
             carsDetailAdapter.bindClickListener {
-                val action = CarHomeFragmentDirections.actionHomeFragmentAnimation()
-                action.brandId = it
-                findNavController().navigate(action)
+               // val action = CarHomeFragmentDirections.actionHomeFragmentAnimation()
+                //action.brandId = it
+                //findNavController().navigate(action)
             }
         }
     }
