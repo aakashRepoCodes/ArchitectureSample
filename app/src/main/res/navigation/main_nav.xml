@@ -9,7 +9,7 @@
         android:name="com.test.cars.presentation.ui.home.CarHomeFragment"
         android:label="CarHomeFragment">
         <action
-            android:id="@+id/action_homeFragment_animation"
+            android:id="@+id/navigateToDetailFrag"
             app:destination="@id/carDetailFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
