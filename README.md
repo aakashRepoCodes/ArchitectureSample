@@ -1,4 +1,4 @@
-# TakeHomeChallange
+# Description
 Just a small repository illustrating various aspects of mobile app including Code-Architecture, Unit-testing, RoomDB etc
 
 Coding Challenge -
