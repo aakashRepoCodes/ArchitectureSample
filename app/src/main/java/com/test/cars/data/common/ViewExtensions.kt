@@ -13,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.Recycler
 import java.lang.IndexOutOfBoundsException
-
-
 fun SearchView.getQueryTextChangeStateFlow(): StateFlow<String> {
     val query = MutableStateFlow("")
     setOnQueryTextListener(object : SearchView.OnQueryTextListener {
